@@ -24,7 +24,7 @@ const burgerIngredient = props => {
         case ('cheese'):
             ingredient = <div className={classes.Cheese}></div>;
             break;
-        case ('becon'):
+        case ('bacon'):
             ingredient = <div className={classes.Bacon}></div>;
             break;
         case ('salad'):
