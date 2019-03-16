@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import Aux from "./../../hoc/Auxiliary";
+import Aux from "../../hoc/Auxiliary/Auxiliary";
 import Burger from "./../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Modal from '../../components/UI/Modal/Modal';
@@ -16,12 +16,12 @@ const INGREDIENT_PRICES = {
 class BurgerBuilder extends Component {
   state = {
     ingredients: {
-      salad: 1,
-      bacon: 2,
-      cheese: 2,
-      meat: 1
+      salad: 0,
+      bacon: 0,
+      cheese: 0,
+      meat: 0
     },
-    totalPrice: 4,
+    totalPrice: 0,
     purchasable: false,
     purchasing: false
   };
