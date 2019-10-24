@@ -6,3 +6,10 @@
     margin: 10px auto;
     box-sizing: border-box;
 }
+
+.Ingredient {
+    display: inline-block;
+    border: 1px solid rgb(153, 153, 153);
+    padding: 2px 5px;
+    margin: auto 5px;
+}

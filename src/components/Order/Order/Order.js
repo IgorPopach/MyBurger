@@ -2,11 +2,18 @@ import React from 'react';
 
 import classes from './Order.css';
 
-const order = (props) => (
-    <div className={classes.Order}>
-        <p>Ingredients: Salad (1)</p>
-        <p>Price: <strong>USD 5.45</strong></p>
-    </div>
-);
+const order = props => {
+        const orders = Object.keys(props.ingredients).map(e => {
+            return <span key={e} className={classes.Ingredient}> {e} ({props.ingredients[e]})</span>
+        })
+    return (
+        <div className={classes.Order}>
+                <p>Ingredients:
+                {orders}
+            </p>
+            <p>Price: <strong>{props.price}</strong></p>
+        </div>
+    );
+} 
 
 export default order;
